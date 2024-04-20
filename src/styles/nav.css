@@ -1,0 +1,33 @@
+.nav{
+    background-color: #24263a;
+    height: 100vh;
+    width: 100%;
+    line-height: 2rem;
+    padding: 5% 0% 5% 3%;
+    /* border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px; */
+}
+.nav hr{
+    border: 1px solid #1d1e2c;
+    margin: 5% 0;
+}
+.nav-ul{
+    width: 100%;
+}
+.nav-lnk{
+    color: #DBDFEA;
+    font-size: .8rem;
+    padding: 5% 10%;
+    width: 100%;
+    font-family: Gilroy;
+    display: flex;
+    cursor: pointer;
+}
+.nav-svg{
+    margin-right: 5%;
+}
+.active{
+    background-color: #1d1e2c;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}

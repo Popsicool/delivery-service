@@ -1,0 +1,14 @@
+.nav-top{
+    display: flex;
+    color: #DBDFEA;
+    font-family: Gilroy;
+    justify-content: space-between;
+    padding: 3% 2%;
+    background-color: #24263A;
+    border-bottom-left-radius: 20px;
+}
+.top-right{
+    display: flex;
+    gap: 2rem;
+    width: 30%;
+}

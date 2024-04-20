@@ -1,0 +1,32 @@
+.home{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    font-family: Gilroy;
+    color: #DBDFEA;
+}
+.home-left{
+    width: 70%;
+}
+
+.home-left-top{
+    display: flex;
+    justify-content: space-between;
+}
+.home-top-card{
+    width: 30%;
+    border-radius: 20px;
+    background-color: #24263A;
+    display: flex;
+    line-height: 2rem;
+    justify-content: space-between;
+}
+.card-dtl{
+    padding: 3% 0% 0% 3%;
+    width: 50%;
+}
+
+.home-right{
+    width: 30%;
+    height: 100vh;
+}

@@ -1,0 +1,63 @@
+.calnderRange {
+  position: absolute;
+  left: 18vw;
+  top: 25vh;
+}
+.calendar-filter {
+  display: flex;
+  gap: 10rem;
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 5%;
+}
+.table-search{
+    width:50%;
+}
+.up-down{
+    display: flex;
+    border: 1px solid #f2f2f2;
+    width: 5%;
+    padding: 1%;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.table-down{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+/* table tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+table tr:hover {
+  background-color: #f2f2f2;
+  color: #1d1e2c;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04aa6d;
+  gap: 2rem;
+  color: white;
+}
+.sort-icon,
+.status-text {
+  padding-left: 5%;
+}
+.status-icon {
+  border-radius: 50%;
+  padding: 3%;
+}
