@@ -8,6 +8,14 @@
 .home-left{
     width: 70%;
 }
+.home-left-middle{
+    width: 95%;
+    height: 40vh;
+    background-color: #24263A;
+    padding: 3%;
+    border-radius: 20px;
+    margin-top: 5%;
+}
 
 .home-left-top{
     display: flex;
@@ -21,12 +29,21 @@
     line-height: 2rem;
     justify-content: space-between;
 }
-.card-dtl{
+.card-dtl, .card-chat{
     padding: 3% 0% 0% 3%;
-    width: 50%;
+    width: 45%;
+}
+.card-chat2{
+    position: relative;
+    top:-50%;
 }
 
 .home-right{
     width: 30%;
     height: 100vh;
+}
+
+.home-left-middle-top{
+    display: flex;
+    justify-content: space-between;
 }
