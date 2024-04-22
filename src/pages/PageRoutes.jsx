@@ -6,7 +6,7 @@ import { History } from "./History";
 import { Nav } from "../components/Nav";
 import { NavTop } from "../components/NavTop";
 import { Profile } from "./Profile";
-import { Charts } from "./Charts";
+// import { Charts } from "./Charts";
 
 export const PageRoutes = () => {
   const location = useLocation();
@@ -25,7 +25,7 @@ export const PageRoutes = () => {
             <Route path="/" element={<Home />} />
             <Route path="/profile" element={<Profile/>} />
             <Route path="/history" element={<History/>} />
-            <Route path="/messages" element={<Charts/>} />
+            {/* <Route path="/messages" element={<Charts/>} /> */}
           </Routes>
         </AnimatePresence>
       </motion.div>
