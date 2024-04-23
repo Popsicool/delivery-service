@@ -1,0 +1,23 @@
+
+.page-hero{
+    background-image: url("../assets/images/truckBg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 50vh;
+}
+.page-hero::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.page-title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 2;
+  }

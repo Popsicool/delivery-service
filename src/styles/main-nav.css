@@ -1,0 +1,18 @@
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    background-color: #fefefe;
+}
+.main-nav-ul-wrap{
+    width: 50%;
+}
+.main-nav-ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link{
+    color: #1D1E2C !important;
+    font-weight: bolder;
+}

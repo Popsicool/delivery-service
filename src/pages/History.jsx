@@ -110,7 +110,7 @@ export const History = () => {
                       )}
 
                       {column.id === "status" && (
-                        <div>
+                        <div className="dropdown">
                           <select
                             value={filters[0] ? filters[0].value || "" : ""}
                             onChange={(e) => {

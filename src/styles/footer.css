@@ -1,0 +1,26 @@
+footer{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20%;
+    line-height: 1.5rem;
+}
+.footer-div1{
+    width: 40%;
+}
+.footer-div ul{
+    display: grid;
+    gap: 1rem;
+}
+
+.footer-head{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.contact-text{
+    display: flex;
+    gap: 1rem;
+}
+.c-link{
+    margin-top: .5rem;
+}

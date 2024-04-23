@@ -47,3 +47,15 @@
     display: flex;
     justify-content: space-between;
 }
+
+.home-left-down{
+    display :flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.home-left-down div{
+    width: 43%;
+    border-radius: 20px;
+    background-color: #24263A;
+    padding: 3%;
+}

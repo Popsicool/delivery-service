@@ -38,7 +38,7 @@ a,a:active, a:visited, a:focus{
   width: 50%;
   align-items:end;justify-content: space-between;
 }
-.pointer{
+.pointer, button{
   cursor: pointer;
 }
 .relative{

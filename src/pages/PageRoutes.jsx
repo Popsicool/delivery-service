@@ -1,11 +1,15 @@
 import React, { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { Home } from "./Home";
+import { Dashboard } from "./Dashboard";
+import { DashboardLayout } from "./DashboardLayout"
 import { History } from "./History";
-import { Nav } from "../components/Nav";
-import { NavTop } from "../components/NavTop";
 import { Profile } from "./Profile";
+import { Home } from "./Home";
+import { MainLayout } from "./MainLayout";
+import { About } from "./About";
+import { Service } from "./Service";
+import { Contact } from "./Contact";
 // import { Charts } from "./Charts";
 
 export const PageRoutes = () => {
@@ -14,21 +18,20 @@ export const PageRoutes = () => {
     window.scrollTo(0, 0);
   }, [location]);
   return (
-    <motion.div className="admin">
-      <motion.div className="admin-left">
-        <Nav />
-      </motion.div>
-      <motion.div className="admin-right">
-        <NavTop/>
+    <motion.div>
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Home />} />
-            <Route path="/profile" element={<Profile/>} />
-            <Route path="/history" element={<History/>} />
+            <Route path="/" element={<MainLayout><Home/></MainLayout>} />
+            <Route path="/about" element={<MainLayout><About/></MainLayout>} />
+            <Route path="/service" element={<MainLayout><Service/></MainLayout>} />
+            <Route path="/contact" element={<MainLayout><Contact/></MainLayout>} />
+            <Route path="/dashboard" element={<DashboardLayout><Dashboard /></DashboardLayout>} />
+            <Route path="/profile" element={<DashboardLayout><Profile/></DashboardLayout>} />
+            <Route path="/history" element={<DashboardLayout><History/></DashboardLayout>} />
+            {/* <Route path="/messages" element={<DashboardLayout><History/></DashboardLayout>} /> */}
             {/* <Route path="/messages" element={<Charts/>} /> */}
           </Routes>
         </AnimatePresence>
-      </motion.div>
     </motion.div>
   );
 };

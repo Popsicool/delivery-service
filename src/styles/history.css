@@ -61,3 +61,26 @@ table th {
   border-radius: 50%;
   padding: 3%;
 }
+
+
+.dropdown select {
+  border: 0 !important;  /*Removes border*/
+  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -moz-appearance: none; /* Removes Default Firefox style*/
+  background-color: #1d1e2c;
+  color: #ffffff !important;
+  background-position: 0px 5px;  /*Position of the background-image*/
+  width: 120px; /*Width of select dropdown to give space for arrow image*/
+  text-indent: 0.01px; /* Removes default arrow from firefox*/
+  text-overflow: "";  /*Removes default arrow from firefox*/
+  border-radius: 10px;
+  cursor: pointer;
+  /*My custom style for fonts*/
+
+  color: #1455a2;
+  padding-left: 30px;
+}
+select option {
+text-align: center;
+padding-left: 20px;
+}

@@ -11,21 +11,23 @@ import dollar from "../assets/svgs/dollar-sign.svg"
 import settings from "../assets/svgs/settings.svg"
 
 const links = [
-  { name: "Dashboard", svg: dashboard, location: "/" },
+  { name: "Dashboard", svg: dashboard, location: "/dashboard" },
   { name: "User Profile", svg: users, location: "/profile" },
   { name: "Messages", svg: message, location: "/messages" },
   { name: "History", svg: creditCard, location: "/history" },
-  { name: "Payments", svg: dollar, location: "/dashboard" },
+  { name: "Payments", svg: dollar, location: "/payment" },
   { name: "Support", svg: settings, location: "/support" },
   // { name: "Dashboard", svg: logout, location: "/dashboard" },
 ];
 
-export const Nav = () => {
+export const DashboardNav = () => {
   const location = useLocation();
   const path = location.pathname
   return (
     <motion.nav className="nav">
-      <div>Logo</div>
+      <div>
+        <Link to="/">Logo</Link>
+      </div>
       <hr />
       <ul className="nav-ul">
         {links.map((link, idx) => {
