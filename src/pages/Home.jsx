@@ -6,11 +6,10 @@ import bike from "../assets/svgs/bike.svg";
 import shipping from "../assets/svgs/shipping.svg";
 import bolt from "../assets/svgs/bolt.svg";
 import payment from "../assets/svgs/payments.svg";
-import whatsapp from "../assets/svgs/whatsapp.svg";
-import phone from "../assets/svgs/phone.svg";
 import arming from "../assets/svgs/arming.svg";
 import dwoman from "../assets/images/dwoman.png";
 import { Testimonies } from "../components/Testimonies";
+import { ContactSection } from "../components/ContactSection";
 const faqs = [
   {
     question: "Where are you located?",
@@ -196,14 +195,7 @@ export const Home = () => {
           </div>
         </div>
       </motion.div>
-      <motion.div className="customer-service">
-        <p>Our Customer service is available 24/7</p>
-        <p>
-          <img src={whatsapp} alt="whatsapp" />
-          <img src={phone} alt="phone" />
-          +254748684421
-        </p>
-      </motion.div>
+      <ContactSection/>
       <Testimonies />
       <motion.div className="faqs">
       <p className="service-header">FAQs</p>
