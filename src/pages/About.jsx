@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { PageHero } from "../components/PageHero";
+import CountUp from "react-countup";
 import "../styles/about.css";
 import truck from "../assets/images/truck.png";
 import chutter from "../assets/images/chutter.png";
@@ -48,21 +49,46 @@ export const About = () => {
           <div className="svg-wrap">
             <img src={domain} alt="card" />
           </div>
-          <p className="num">143+</p>
+          <p className="num">
+          <CountUp
+              start={200}
+              end={413}
+              duration={4}
+              useEasing={true}
+              separator=","
+            />
+            +</p>
           <p>House Moved</p>
         </div>
         <div>
           <div className="svg-wrap">
             <img src={door} alt="card" />
           </div>
-          <p className="num">543+</p>
+          <p className="num">
+            <CountUp
+              start={200}
+              end={543}
+              duration={3}
+              useEasing={true}
+              separator=","
+            />
+            +
+          </p>
           <p>Offices moved</p>
         </div>
         <div>
           <div className="svg-wrap">
             <img src={mood} alt="card" />
           </div>
-          <p className="num">143+</p>
+          <p className="num">
+          <CountUp
+              start={400}
+              end={600}
+              duration={3}
+              useEasing={true}
+              separator=","
+            />
+            +</p>
           <p>House Moved</p>
         </div>
         <div>
@@ -70,7 +96,15 @@ export const About = () => {
             <img src={mot} alt="card" />
           </div>
 
-          <p className="num">50,670+</p>
+          <p className="num">
+          <CountUp
+              start={50300}
+              end={50670}
+              duration={3}
+              useEasing={true}
+              separator=","
+            />
+            +</p>
           <p>Kilometers covered</p>
         </div>
       </div>
@@ -149,7 +183,7 @@ export const About = () => {
           <span>
             <img src={box2} alt="arrow" />
           </span>
-            <span>We deliver yoour goods</span>
+          <span>We deliver yoour goods</span>
         </p>
       </div>
       <Testimonies />
