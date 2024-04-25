@@ -76,3 +76,57 @@
     align-items: center;
     padding-top: 2%;
 }
+.s-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5%;
+    gap: 2rem;
+}
+.sc2{
+    width: 70%;
+    height: 300px;
+    line-height: 2rem;
+    padding: 3% 5%;
+}
+
+.hiring{
+    display:grid;
+    place-items: center;
+    padding: 5%;
+    background-image: url('../assets/images/vans.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.hiring::before{
+    content: "";
+    background-color: #482e2e;
+    opacity: .6;
+    position: absolute;
+    /* z-index: -3; */
+    width: 100%;
+    height: 31%;
+}
+.hiring-header{
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 5;
+    
+}
+.hiring-text{
+    width: 50%;
+    font-weight: bold;
+    z-index: 5;
+}
+.do-d-work{
+    text-align: center;
+    line-height: 2rem;
+    width: 100%;
+    padding: 2%;
+    color: #24263A;
+    background-color: #cfcfcf;
+}
+.do-d-work p:nth-child(even){
+    font-size: large;
+}
